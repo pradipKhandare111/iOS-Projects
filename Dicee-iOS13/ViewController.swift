@@ -31,9 +31,11 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: Any)
     {
-            diceOne.image = diceArray[Int.random(in: 0...5)]
+            //diceOne.image = diceArray[Int.random(in: 0...5)]
+            diceOne.image = diceArray.randomElement()
         
-            diceTwo.image = diceArray[Int.random(in: 0...5)]
+//            diceTwo.image = diceArray[Int.random(in: 0...5)]
+            diceTwo.image = diceArray.randomElement()
         
 //        leftDiceNumber += 1
 //        rightDiceNumber -= 1
